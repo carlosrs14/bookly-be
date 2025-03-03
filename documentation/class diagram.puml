@@ -1,0 +1,10 @@
+@startuml diagrama
+User "1"--"*" Review:"hace"
+Review "*"--"1" Book
+Book "*"--"1" Author
+User "*"--"*" Review:"comenta"
+Gender "1"--"*" Book
+User "*"--"*"Review :"da like"
+User "*"--"*"Review:"favorita"
+@enduml
+

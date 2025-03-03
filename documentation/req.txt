@@ -1,0 +1,21 @@
+requerimientos funcionales:
+1 buscar un libro
+2 agregar un libro pero el admin lo debe aprovar o agregar el libro como admin
+3 ver características del libro
+4 hacer reseña del libro
+5 ver las reseñas de ese libro
+6 dar like a las reseñas
+7 comentar reseñas --las reseñas tienen comentarios, pero los comentarios no se pueden responder
+8 filtrar libros por género
+9 filtrar libros por autor
+10 reportar reseña
+11 ordenar reseñas de mayor a menor número de likes
+12 paginar con respecto a lo que diga el usuario (5, 10, 50)
+13 ver estadísticas para los admins
+14 que se puedan añadir imágenes para los libros y para el perfil del usuario
+15 que pueda tener oauth y/o autenticación jwt
+16 guardar reseña como favorita
+17 que el admin pueda responder a los reportes de los usuario
+
+requerimientos no funcionales:
+19 anuncios
