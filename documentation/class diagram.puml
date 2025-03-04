@@ -1,10 +1,13 @@
 @startuml diagrama
 User "1"--"*" Review:"hace"
-Review "*"--"1" Book
-Book "*"--"1" Author
-User "*"--"*" Review:"comenta"
-Gender "1"--"*" Book
-User "*"--"*"Review :"da like"
-User "*"--"*"Review:"favorita"
+Review "*"--"1" Book:"pertenec"
+Book "*"--"1" Author:"pertenece"
+User "1"--"*" Comment:"hace"
+Comment "1"--"1" Review:"pertenece"
+Gender "1"--"*" Book:"tiene"
+User "1"--"*"Like:"da"
+Like "1"--"1"Review:"pertenece"
+User "1"--"*"Favorite:"tiene"
+Favorite "1"--"1"Review:"es"
 @enduml
 
