@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from models import Gender
+from ..models import Gender
 
 class GenderSerializer(serializers.ModelSerializer):
     

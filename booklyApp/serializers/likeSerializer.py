@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from models.like import Like
-from serializers.userSerializer import UserSerializer
-from serializers.reviewSerializer import ReviewSerializer
+from .userSerializer import UserSerializer
+from .reviewSerializer import ReviewSerializer
+from ..models.like import Like
 
 class LikeSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only = True)

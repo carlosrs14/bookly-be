@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from models.favorite import Favorite
-from serializers.reviewSerializer import ReviewSerializer
-from serializers.userSerializer import UserSerializer
+from .reviewSerializer import ReviewSerializer
+from .userSerializer import UserSerializer
+from ..models.favorite import Favorite
 
 class FavoriteSerialzer(serializers.ModelSerializer):
     user = UserSerializer(read_only = True)
