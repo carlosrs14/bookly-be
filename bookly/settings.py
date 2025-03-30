@@ -44,7 +44,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': False,
     'BLACKLIST_AFTER_ROTATION': True,
     'UPDATE_LAST_LOGIN': False,
-    'ALGORITH': 'HS256',
+    'ALGORITHM': 'HS256',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id'
 }
@@ -61,12 +61,13 @@ MIDDLEWARE = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERSMISSION_CLASSES': {
+    'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.AllowAny',
-    },
-    'DEFAULT_AUTHENTICATION_CLASSES': {
+        )
+    ,
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    }
+        )
 }
 
 ROOT_URLCONF = 'bookly.urls'
